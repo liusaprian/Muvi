@@ -11,7 +11,6 @@ import com.afdhal_fa.imageslider.`interface`.ItemClickListener
 import com.afdhal_fa.imageslider.model.SlideUIModel
 import com.tiketgrup1.muvi.databinding.FragmentHomeBinding
 import com.tiketgrup1.muvi.ui.adapter.MovieAdapter
-import com.tiketgrup1.muvi.utils.ResponseConfig
 import com.tiketgrup1.muvi.viewmodel.MovieViewModel
 
 class HomeFragment : Fragment() {
@@ -41,11 +40,7 @@ class HomeFragment : Fragment() {
         viewModel.requestUpcomingMovies()
 
         viewModel.nowPlayingMovies.observe(this, {
-            val imageList = ArrayList<SlideUIModel>()
-            it.map { movie ->
-                imageList.add(SlideUIModel("${ResponseConfig.IMAGE_BASE_URL}/${ResponseConfig.IMAGE_FILE_SIZE}${movie.backdrop}"))
-            }
-            binding.nowPlayingSlider.setImageList(imageList)
+            binding.nowPlayingSlider.setImageList(it)
             binding.nowPlayingSlider.setItemClickListener(object : ItemClickListener {
                 override fun onItemClick(model: SlideUIModel, position: Int) {
                     //intent to detail carrying movie at position

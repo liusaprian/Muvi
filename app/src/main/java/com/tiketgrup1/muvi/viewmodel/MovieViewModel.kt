@@ -4,6 +4,7 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.afdhal_fa.imageslider.model.SlideUIModel
 import com.tiketgrup1.muvi.data.MovieRepository
 import com.tiketgrup1.muvi.model.Movie
 import com.tiketgrup1.muvi.utils.ResponseConfig
@@ -17,8 +18,8 @@ class MovieViewModel : ViewModel() {
     private val _popularMovies = MutableLiveData<ArrayList<Movie>>()
     val popularMovies: LiveData<ArrayList<Movie>> = _popularMovies
 
-    private val _nowPlayingMovies = MutableLiveData<ArrayList<Movie>>()
-    val nowPlayingMovies: LiveData<ArrayList<Movie>> = _nowPlayingMovies
+    private val _nowPlayingMovies = MutableLiveData<ArrayList<SlideUIModel>>()
+    val nowPlayingMovies: LiveData<ArrayList<SlideUIModel>> = _nowPlayingMovies
 
     private val _upcomingMovies = MutableLiveData<ArrayList<Movie>>()
     val upcomingMovies: LiveData<ArrayList<Movie>> = _upcomingMovies
@@ -37,8 +38,11 @@ class MovieViewModel : ViewModel() {
     fun requestNowPlayingMovies() {
         viewModelScope.launch {
             val result = withContext(Dispatchers.IO) {
-                val dataNeeded = ArrayList<Movie>()
-                dataNeeded.addAll(repo.getMovies(ResponseConfig.NOW_PLAYING).movieList)
+                val dataNeeded = ArrayList<SlideUIModel>()
+                repo.getMovies(ResponseConfig.NOW_PLAYING).movieList.map { movie ->
+                    if(movie.backdrop != null)
+                        dataNeeded.add(SlideUIModel("${ResponseConfig.IMAGE_BASE_URL}/${ResponseConfig.IMAGE_FILE_SIZE}${movie.backdrop}"))
+                }
                 dataNeeded
             }
             _nowPlayingMovies.postValue(result)

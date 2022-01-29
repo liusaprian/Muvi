@@ -2,7 +2,6 @@ package com.tiketgrup1.muvi.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.tiketgrup1.muvi.R
 import com.tiketgrup1.muvi.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -15,7 +14,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         supportFragmentManager.beginTransaction()
-            .add(binding.frameContainer.id, HomeFragment())
+            .add(binding.frameContainer.id, BaseFragment())
             .commit()
     }
 }

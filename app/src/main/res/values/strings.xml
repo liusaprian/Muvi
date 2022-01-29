@@ -5,4 +5,6 @@
     <string name="now_playing">Now Playing</string>
     <string name="popular">Popular</string>
     <string name="upcoming">Upcoming</string>
+    <string name="home">Home</string>
+    <string name="bookmark">Bookmark</string>
 </resources>

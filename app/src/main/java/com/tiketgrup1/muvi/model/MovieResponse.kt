@@ -16,7 +16,7 @@ data class Movie(
 	val description: String,
 
 	@field:SerializedName("backdrop_path")
-	val backdrop: String,
+	val backdrop: String? = null,
 
 	@field:SerializedName("title")
 	val title: String,
