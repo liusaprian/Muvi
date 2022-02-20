@@ -5,7 +5,6 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import com.tiketgrup1.muvi.R
 import com.tiketgrup1.muvi.databinding.FragmentBaseBinding
 
@@ -41,9 +40,9 @@ class BaseFragment : Fragment() {
                 }
                 R.id.bookmark_page -> {
                     currentFragment = "Bookmark"
-//                    childFragmentManager.beginTransaction()
-//                        .replace(binding.base.id, BookmarkFragment())
-//                        .commit()
+                    childFragmentManager.beginTransaction()
+                        .replace(binding.base.id, BookmarkFragment())
+                        .commit()
                     true
                 }
                 else -> false
