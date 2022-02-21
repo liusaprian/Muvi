@@ -3,22 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Training/Android/Muvi/app/src/main/res/layout/activity_main.xml" value="0.2056159420289855" />
-        <entry key="..\:/Training/Android/Muvi/app/src/main/res/layout/fragment_base.xml" value="0.2056159420289855" />
-        <entry key="..\:/Training/Android/Muvi/app/src/main/res/layout/fragment_bookmark.xml" value="0.4" />
-        <entry key="..\:/Training/Android/Muvi/app/src/main/res/layout/fragment_home.xml" value="0.21105072463768115" />
-        <entry key="..\:/Training/Android/Muvi/app/src/main/res/layout/item_bookmark.xml" value="0.11043566362715299" />
-        <entry key="..\:/Training/Android/Muvi/app/src/main/res/menu/bottom_nav_menu.xml" value="0.23229166666666667" />
-        <entry key="..\:/Project Kuliah/Muvi/app/src/main/res/layout/activity_splash.xml" value="0.1" />
-        <entry key="..\:/Users/apria/AndroidStudioProjects/Muvi/app/src/main/res/drawable/bottom_nav_selector.xml" value="0.28854166666666664" />
-        <entry key="..\:/Users/apria/AndroidStudioProjects/Muvi/app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.28854166666666664" />
-        <entry key="..\:/Users/apria/AndroidStudioProjects/Muvi/app/src/main/res/layout/activity_main.xml" value="0.15670289855072464" />
-        <entry key="..\:/Users/apria/AndroidStudioProjects/Muvi/app/src/main/res/layout/fragment_base.xml" value="0.14990942028985507" />
-        <entry key="..\:/Users/apria/AndroidStudioProjects/Muvi/app/src/main/res/layout/fragment_home.xml" value="0.22" />
-        <entry key="..\:/Users/apria/AndroidStudioProjects/Muvi/app/src/main/res/layout/movie_item.xml" value="0.15670289855072464" />
-        <entry key="..\:/Users/apria/AndroidStudioProjects/Muvi/app/src/main/res/layout/slider_item.xml" value="0.15670289855072464" />
-        <entry key="..\:/Users/apria/AndroidStudioProjects/Muvi/app/src/main/res/layout/toolbar.xml" value="0.14402173913043478" />
-        <entry key="..\:/Users/apria/AndroidStudioProjects/Muvi/app/src/main/res/menu/bottom_nav_menu.xml" value="0.27239583333333334" />
+        <entry key="..\:/Users/blaze/Documents/BACKUPRH/BINUS/BNCC/MyApplication/app/src/main/res/layout/activity_detail.xml" value="0.2246376811594203" />
+        <entry key="..\:/Users/blaze/Documents/BACKUPRH/BINUS/BNCC/MyApplication/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/blaze/Documents/BACKUPRH/BINUS/BNCC/MyApplication/app/src/main/res/layout/activity_setting.xml" value="0.2246376811594203" />
       </map>
     </option>
   </component>
