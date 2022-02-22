@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Muvi</string>
+    <string name="now_playing">Now Playing</string>
+    <string name="popular">Popular</string>
+    <string name="upcoming">Upcoming</string>
+    <string name="home">Home</string>
+    <string name="bookmark">Bookmark</string>
+    <string name="bookmarked">Bookmarked</string>
+    <string name="film_poster">film_poster</string>
+    <string name="description">Description</string>
+    <string name="casts">Casts</string>
+    <string name="duration">Duration</string>
+    <string name="price">Price</string>
+</resources>
